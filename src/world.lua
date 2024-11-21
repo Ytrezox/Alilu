@@ -1,4 +1,4 @@
-require("config_player")
+require("config")
 World = {}
 World.__index = World
 
