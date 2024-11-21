@@ -13,6 +13,8 @@
  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
                             ShadowsII & Ytrezox 
 ]]
+require("src/game")
+
 function love.load()
     GAME:load()
 end

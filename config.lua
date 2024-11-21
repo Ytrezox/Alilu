@@ -1,4 +1,7 @@
-ENTITIES = {
-    WIDTH = 32,
-    HEIGHT =32,
+CONFIG = {
+    ENTITIES = {
+        WIDTH = 32,
+        HEIGHT = 32,
+    }  
+
 }

@@ -1,14 +1,17 @@
-require (src/entities)
+require ("src/entities")
+GAME = {}
 function GAME.load()
-    GAME:load()
 
-    Vague= ENTITIES:new(type,id,x,y)
+    Vague= ENTITIES:new(true,1,150,150)
+    Rond = ENTITIES:new(true,2,250,250)
 end
 
-function love.update(dt)
-    GAME:update(dt)
+function GAME.update(dt)
+    Vague:update(dt)
+    Rond:update(dt)
 end
 
-function love.draw()
-    GAME:draw()
+function GAME.draw()
+    Vague:draw()
+    Rond:draw()
 end
