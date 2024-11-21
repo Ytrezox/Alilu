@@ -15,5 +15,7 @@ function Game:update(dt)
 end
 
 function Game.draw()
+    WORLD1:draw()
+    
 
 end
