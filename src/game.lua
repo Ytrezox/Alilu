@@ -1,11 +1,16 @@
-function GAME.load()
-    GAME:load()
+require("src/world")
+require("src/grid")
+
+Game = {}
+
+function Game:load()
+    WORLD1 = World:new(GRID)
 end
 
-function love.update(dt)
-    GAME:update(dt)
+function Game:update(dt)
+
 end
 
-function love.draw()
-    GAME:draw()
+function Game:draw()
+    WORLD1:draw()
 end
