@@ -1,3 +1,8 @@
+require (src/entities)
+function GAME.load()
+    GAME:load()
+
+    Vague= ENTITIES:new(type,id,x,y)
 require("src/world")
 require("src/grid")
 
