@@ -2,18 +2,22 @@ ENTITIES = {}
 ENTITIES.__index= ENTITIES
 require("CONFIG")
 
-function ENTITIES:new(type,id,x,y)
-        local instance = setmetatable({},ENTITIES)
-        instance.type = type
-        instance.id = id
-        instance.x= x
-        instance.y= y
-            if id == 2 then
-                 instance.image = love.graphics.newImage("assets/entities/test.png")
-            end     
-        ENTITIES[#ENTITIES + 1] = instance
-        return instance
+function ENTITIES:new(type, id)
+    local instance = setmetatable({}, ENTITIES)
+    instance.type = type
+    instance.id = id
+    if id == 2 then
+        instance.image = love.graphics.newImage("assets/entities/test.png")
+    elseif id == 3 then
+        instance.image1 = love.graphics.newImage("assets/entities/test2.png")
+    elseif id == 4 then
+        instance.image2 = love.graphics.newImage("assets/entities/test3.png")
+    end
+    
+    
+    return instance
 end
+
 
 
 function ENTITIES:update(dt)
@@ -23,8 +27,6 @@ function ENTITIES:update(dt)
 end
 
 function ENTITIES:draw()
-    if self.id ==2 then
-        love.graphics.draw(self.image)
-    end
+
 end
 
