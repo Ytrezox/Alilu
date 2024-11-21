@@ -13,16 +13,18 @@
  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
                             ShadowsII & Ytrezox 
 ]]
+
 require("src/game")
 
+
 function love.load()
-    GAME:load()
+    Game:load()
 end
 
 function love.update(dt)
-    GAME:update(dt)
+    Game:update(dt)
 end
 
 function love.draw()
-    GAME:draw()
+    Game:draw()
 end

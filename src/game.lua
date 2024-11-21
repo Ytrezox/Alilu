@@ -4,14 +4,19 @@ function GAME.load()
 
     Vague= ENTITIES:new(true,1,150,150)
     Rond = ENTITIES:new(true,2,250,250)
+require("src/world")
+require("src/grid")
+
+Game = {}
+
+function Game:load()
+    WORLD1 = World:new(GRID)
 end
 
-function GAME.update(dt)
-    Vague:update(dt)
-    Rond:update(dt)
+function love.update(dt)
+    GAME:update(dt)
 end
 
-function GAME.draw()
-    Vague:draw()
-    Rond:draw()
+function love.draw()
+    GAME:draw()
 end
