@@ -7,11 +7,11 @@ function ENTITIES:new(type, id)
     instance.type = type
     instance.id = id
     if id == 2 then
-        instance.image = love.graphics.newImage("assets/entities/test.png")
+        instance.image = love.graphics.newImage("assets/entities/vague2.png")
     elseif id == 3 then
         instance.image1 = love.graphics.newImage("assets/entities/test2.png")
     elseif id == 4 then
-        instance.image2 = love.graphics.newImage("assets/entities/test3.png")
+        instance.image2 = love.graphics.newImage("assets/entities/double_vague.png")
     end
     
     
@@ -23,6 +23,7 @@ end
 function ENTITIES:update(dt)
     if love.mouse.isDown(1) then
         ENTITIES.type = false
+        print("uiytrez")
     end 
 end
 

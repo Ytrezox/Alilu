@@ -1,18 +1,17 @@
 require("config")
 World = {}
 World.__index = World
-Entity = {}  
-
+Entity = {}
 
 function World:new(map)
     local instance = setmetatable({}, World)
     instance.map = map
-    instance.entities = {}  
+    instance.entities = {}
     return instance
 end
 
 function World:addEntity(entity)
-    table.insert(self.entities, entity)  
+    table.insert(self.entities, entity)
 end
 
 function World:draw()

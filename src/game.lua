@@ -18,6 +18,7 @@ function Game:update(dt)
     Vague:update(dt)
     Rond:update(dt)
     Double_vague:update(dt)
+    ENTITIES:update(dt)
 end
 
 function Game.draw()
